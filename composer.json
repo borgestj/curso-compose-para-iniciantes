@@ -1,0 +1,27 @@
+{
+    "name": "roberto/curso-composer",
+
+    "minimum-stability": "stable",
+
+    "require": {
+        "phpmailer/phpmailer": "^5.2",
+        "php-activerecord/php-activerecord": "^1.2",
+        "symfony/var-dumper": "^3.3.6",
+        "cboden/ratchet": "^0.3.6"
+    },
+
+    "autoload": {
+        "psr-4":{
+            "app\\":"app",
+            "asw\\":["services", "jobs"]
+        },
+        "files": ["functions/helpers.php"]
+    },
+
+    "authors": [
+        {
+            "name": "Roberto Borges",
+            "email": "borges.tj@gmail.com"
+        }
+    ]
+}
